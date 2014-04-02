@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Lab</title>
+
+<style>
+h1.hidden {visibility:hidden;}
+
+p.italics {font-style:italic;}
+p.internalStyle {font-size: 20px;}
+#anID {font-size:26px; text-align:center; color:orange;}
+
+table, td, th
+{
+border:1px solid green;
+}
+th
+{
+background-color:green;
+color:white;
+}
+td
+{
+padding:15px
+}
+li
+{ 
+list-style-type:square;
+background-color:#FFFFFF;}
+margin:5;
+padding:0;
+}
+
+p
+{
+color:red;
+text-align:center;
+} 
+body
+{
+background-color:blue;
+}
+
+a:link
+{
+display:block;
+width:90px;
+link {color:black;text-decoration:none}
+visited {color:purple;}
+}
+
+</style>
+</head>
+
+<body>
+<header>
+<h1 class = "hidden">I'm hidden!</h1>
+<h1>CS355 Lab 14</h1>
+<p class = "italics">Hello!</p>
+<p class = "internalStyle">This website is about the movie The Wolf of Wall Street.</p>
+
+<div id="navigation" style ="width:600px">
+<ul class="links">
+
+<li class = squares"><a href="http://www.imdb.com/title/tt0993846/" class="unvisited">IMDB</a></li>
+<li><a href="http://en.wikipedia.org/wiki/The_Wolf_of_Wall_Street_(2013_film)" class="unvisited">Wikipedia</a></li>
+<li><a href = "http://www.rogerebert.com/reviews/the-wolf-of-wall-street-2013" class="unvisited">Reviews</a></li>
+</ul>
+
+<table>
+<tr>
+<th>Actor</th>
+<th>Role</th>
+</tr>
+<tr>
+<td>Leonardo DiCaprio</td>
+<td>Jordan Belfort</td>
+</tr>
+<tr>
+<td>Jonah Hill</td>
+<td>Donnie Azoff</td>
+</tr>
+<tr>
+<td>Margot Robbi</td>
+<td>Naomi Lapaglia</td>
+</tr>
+<tr>
+<td>Cristin Milioti</td>
+<td>Teresa Petrillo</td>
+</tr>
+</table>
+
+<footer>
+<p>Posted by Kyle Vasconcellos</p>
+<p>I'm a footer</p>
+</footer>
+</div>
+
+<a onclick="document.getElementById('myDiv').style.display='';return false;"
+href = "" style = "text-decoration:none;">
+Click me!</a>
+<div id = "myDiv" style = "display:none;">
+I appeared using javascript!
+</div>
